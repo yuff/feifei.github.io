@@ -1,0 +1,31 @@
+https://w3c.github.io/aria-in-html/
+
+ARIA使用的一些规则：
+1.可以使用原生html元素的时候尽量使用原生元素，不要使用Aria的role，state，property去重定义一个元素的可访问性
+例外： 
+	如果一个元素在Html（H5）中可用，但是尚不支持其可访问性（http://www.html5accessibility.com/）
+	由于原生元素本身无法满足视觉设计的样式要求
+
+2. 如非必要，不要改变html标签的原生语义
+	请不要这样做：<h1 role=button>heading button</h1>
+	正确的做法是：<h1><button>heading button</button></h1>
+
+	注： 如果一个非交互的html元素被用作交互元素，开发者要做的不光是加上相关语义的ARIA标签，还需要用脚本语言实现相应的交互行为。
+
+3. 所有的可交互元素必须可以使用键盘访问
+
+4. 对于可见的可以被聚焦（focusable）的元素，不要使用 role="presentation" 或者 aria-hidden="true"
+	这样做可能会导致一些用户聚焦不到元素
+	如果一个可交互的元素师不可见的或者不可交互的,可以使用 aria-hidden="true"
+	如： button {visibility:hidden}
+		<button aria-hidden="true">press me</button>
+		注： display:none会把元素从accessibility tree中移除，这个时候再用aria-hidden="true"就是画蛇添足了
+
+5. 所有的可交互元素必须有个可访问性名字
+	label并不能作为自定义控件的可访问性名字
+	可以用 <label>作为可访问性名字的元素包括<button>, <input>, <keygen>, <meter>, <output>, <progress>, <select>, and <textarea>. （https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories）
+
+
+
+
+	http://heydonworks.com/practical_aria_examples/
