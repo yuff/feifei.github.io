@@ -1,3 +1,13 @@
+AX - ScreenReader
+BB:
+https://silicon.pd.local/pages/viewpage.action?spaceKey=SHSV&title=Accessibility+Requirements%3A+Web
+https://confluence.bbpd.io/display/SHSV/Auditing+for+Accessibility%3A+Web
+color contrast:
+https://www.w3.org/TR/WCAG20/ Section 1.4.3
+normal: 4.5:1
+large text 3:1
+
+
 https://w3c.github.io/aria-in-html/
 
 ARIA使用的一些规则：
@@ -26,6 +36,7 @@ ARIA使用的一些规则：
 	可以用 <label>作为可访问性名字的元素包括<button>, <input>, <keygen>, <meter>, <output>, <progress>, <select>, and <textarea>. （https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories）
 
 
-
-
 	http://heydonworks.com/practical_aria_examples/
+
+CSS
+
