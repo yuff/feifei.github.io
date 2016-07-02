@@ -1,0 +1,20 @@
+关于BFC
+Normal flow
+普通流：https://www.w3.org/TR/CSS2/visuren.html#block-formatting
+Block formatting context: 
+会建立新的BFC的元素：
+1. float元素
+2. 绝对定位元素
+3. 块容器（block container）: display为inline-block,table-cells,table-captions的非块元素已经overflow是visible之外（auto,hidden,scroll）的块元素（display:block）
+
+在一个BFC中，各个盒子模型从包含块（containing block）顶部向下依次排列,两个相邻元素的垂直局地取决于其‘margin’属性。同一个BFC中的两个相邻块元素的margin会发生坍塌（collapse）。
+
+关于margin collapse：
+https://css-tricks.com/what-you-should-know-about-collapsing-margins/
+http://www.w3cplus.com/css/understanding-bfc-and-margin-collapse.html
+
+
+margin collapse的结果
+1. 如果两个相邻margin都大于0或者都小于0， collaspe结果是两者中绝对值大的那个
+2. 如果两个相邻的margin一个大于0一个小于0， collapse结果为两者之和
+http://codepen.io/fyu/pen/grWyYx
