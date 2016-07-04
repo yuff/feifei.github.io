@@ -1,0 +1,13 @@
+去除inline-block中间间隙的几种方法：
+https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/
+这两篇文章基本涵盖了解决这个问题的方法，个人不太倾向于用html结构标签去hack的方法,比较能接受的：
+1. float布局的话，需要处理好float元素（闭合浮动）
+2. font-size：0
+3. flex布局（需要浏览器支持，至于浏览器是否支持此属性，可以在caniuse.com查询）
+
+其他方法：
+至于张鑫旭大神提到的其他几种方法：
+letter-spacing/word-spacing:
+测试： 在chrome（51.0.2704.103）下，默认字体大小设置letter-spacing： -3px视觉效果没什么问题,但当字体变大时，这个设置就力不从心了：（，作者提到在chrome中可以设置再display: table或者display：inline-table，实际上，如果设置了display: table或者display: inline-table，那么这个letter-spacing设置与否，都不会影响布局效果。
+http://codepen.io/fyu/pen/LkLyOm
