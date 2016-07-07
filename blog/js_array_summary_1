@@ -1,0 +1,23 @@
+http://javascript-puzzlers.herokuapp.com/之第七题
+
+Array 方法中
+
+不会处理那些已删除（使用delete方法等情况）或者从未赋值的项将被跳过（但不包括哪些值为 undefined 的项的方法有：
+filter
+every
+forEach
+reduce
+reduceRight
+some
+
+会处理未赋值项的方法：
+map
+
+
+var ary = [0,1,2];
+ary[10] = 10;
+ary.filter(function(x) { return x === undefined;});
+//结果为[]
+
+ary.map(function(a,b) {return a*b;})
+//结果为[0, 1, 4, undefined × 7, 100]
