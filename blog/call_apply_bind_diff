@@ -1,0 +1,36 @@
+call vs apply vs bind
+这三个方法都可以改变运行时上下文（this）
+关于三者的区别， stackoverflow上有一篇解释：
+http://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
+简单来说，就是call和apply是立即执行的，而bind则需要等到函数被调用时才被执行
+
+e.g:
+call()
+
+function Product() {
+	this.name='product';
+	this.price='0';
+	this.category='NO CATEGORY';
+}
+Product.prototype.printProduct = function(){
+  	console.log('the name is: ' + this.name + ', the price is: ' + this.price + ' and the category is: ' + this.category);
+}
+
+function Food(name, price) {
+	this.category = 'food';
+	this.name = name;
+	this.price = price;
+}
+
+function Toy(name, price) {
+	this.category = 'toy';
+	this.name = name;
+	this.price = price;
+}
+
+var cheese = new Food('feta', 5);
+var fun = new Toy('robot', 40);
+var prod = new Product();
+Product.prototype.printProduct.call(cheese);
+prod.printProduct.call(fun); 
+prod.printProduct();
