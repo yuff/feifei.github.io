@@ -1,0 +1,32 @@
+在函数表达式和lambda表达式中，this有什么不同？
+在MDN中关于arrow function中有这么一段描述：
+
+Until arrow functions, every new function defined its own this value (a new object in case of a constructor, undefined in strict mode function calls, the context object if the function is called as an "object method", etc.). This proved to be annoying with an object-oriented style of programming.
+
+see: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Lexical_this
+
+e.g:
+function Person() {
+  // The Person() constructor defines `this` as an instance of itself.
+  this.age = 0;
+
+  setInterval(function growUp() {
+    // In non-strict mode, the growUp() function defines `this` 
+    // as the global object, which is different from the `this`
+    // defined by the Person() constructor.
+    this.age++;
+  }, 1000);
+}
+
+
+function Person() {
+  // The Person() constructor defines `this` as an instance of itself.
+  this.age = 0;
+
+  setInterval( () => {
+  //here this is the one defined in Person
+    this.age++;
+  }, 1000);
+}
+
+var p = new Person();
