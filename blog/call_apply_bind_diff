@@ -3,6 +3,11 @@ call vs apply vs bind
 关于三者的区别， stackoverflow上有一篇解释：
 http://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
 简单来说，就是call和apply是立即执行的，而bind则需要等到函数被调用时才被执行
+call和apply的区别就在于接受参数的不同，apply接受array形式的参数，而call则需要罗列所有的参数，one by one
+
+theFunction.apply(valueForThis, arrayOfArgs)
+
+theFunction.call(valueForThis, arg1, arg2, ...)
 
 e.g:
 call()
