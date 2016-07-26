@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <script data-main="js/app.js" src="bower_components/requirejs/require.js"></script>
+</head>
+<body ng-controller="mainController">
+<div class="menu-container">
+    <div ng-repeat="menu in mainController.menus" ng-click="mainController.clickMenu(menu)">
+        {{menu}}
+    </div>
+</div>
+</body>
+</html>
