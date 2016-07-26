@@ -1,0 +1,188 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'bower', null ]
+7 verbose cache add spec bower
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'bower',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'bower',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed bower@*
+10 verbose addNamed "*" is a valid semver range for bower
+11 silly addNameRange { name: 'bower', range: '*', hasData: false }
+12 silly mapToRegistry name bower
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/bower
+16 verbose addNameRange registry:https://registry.npmjs.org/bower not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/bower
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:07:49 PM
+20 verbose request id 8e20d32ceda34753
+21 verbose etag "9DARF75UKZ1PWEP96TVC27LRV"
+22 http request GET https://registry.npmjs.org/bower
+23 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+24 info attempt registry request try #2 at 2:07:59 PM
+25 verbose etag "9DARF75UKZ1PWEP96TVC27LRV"
+26 http request GET https://registry.npmjs.org/bower
+27 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+28 info attempt registry request try #3 at 2:08:59 PM
+29 verbose etag "9DARF75UKZ1PWEP96TVC27LRV"
+30 http request GET https://registry.npmjs.org/bower
+31 silly get cb [ 304, undefined ]
+32 verbose etag https://registry.npmjs.org/bower from cache
+33 verbose get saving bower to /Users/fyu/.npm/registry.npmjs.org/bower/.cache.json
+34 silly addNameRange number 2 { name: 'bower', range: '*', hasData: true }
+35 silly addNameRange versions [ 'bower',
+35 silly addNameRange   [ '0.1.0',
+35 silly addNameRange     '0.1.2',
+35 silly addNameRange     '0.1.3',
+35 silly addNameRange     '0.2.0',
+35 silly addNameRange     '0.3.0',
+35 silly addNameRange     '0.3.1',
+35 silly addNameRange     '0.3.2',
+35 silly addNameRange     '0.4.0',
+35 silly addNameRange     '0.5.0',
+35 silly addNameRange     '0.5.1',
+35 silly addNameRange     '0.6.0',
+35 silly addNameRange     '0.6.1',
+35 silly addNameRange     '0.6.2',
+35 silly addNameRange     '0.6.3',
+35 silly addNameRange     '0.6.4',
+35 silly addNameRange     '0.6.5',
+35 silly addNameRange     '0.6.6',
+35 silly addNameRange     '0.6.7',
+35 silly addNameRange     '0.6.8',
+35 silly addNameRange     '0.7.0',
+35 silly addNameRange     '0.7.1',
+35 silly addNameRange     '0.8.0',
+35 silly addNameRange     '0.8.1',
+35 silly addNameRange     '0.8.2',
+35 silly addNameRange     '0.8.3',
+35 silly addNameRange     '0.8.4',
+35 silly addNameRange     '0.8.5',
+35 silly addNameRange     '0.8.6',
+35 silly addNameRange     '0.9.0',
+35 silly addNameRange     '0.9.1',
+35 silly addNameRange     '0.9.2',
+35 silly addNameRange     '0.10.0',
+35 silly addNameRange     '1.0.0',
+35 silly addNameRange     '1.0.1',
+35 silly addNameRange     '1.0.2',
+35 silly addNameRange     '1.0.3',
+35 silly addNameRange     '1.1.0',
+35 silly addNameRange     '1.1.1',
+35 silly addNameRange     '1.1.2',
+35 silly addNameRange     '1.2.0',
+35 silly addNameRange     '1.2.1',
+35 silly addNameRange     '1.2.2',
+35 silly addNameRange     '1.2.3',
+35 silly addNameRange     '1.2.4',
+35 silly addNameRange     '1.2.5',
+35 silly addNameRange     '1.2.6',
+35 silly addNameRange     '1.2.7',
+35 silly addNameRange     '1.2.8',
+35 silly addNameRange     '1.3.0',
+35 silly addNameRange     '1.3.1',
+35 silly addNameRange     '1.3.2',
+35 silly addNameRange     '1.3.3',
+35 silly addNameRange     '1.3.4',
+35 silly addNameRange     '1.3.5',
+35 silly addNameRange     '1.3.6',
+35 silly addNameRange     '1.3.7',
+35 silly addNameRange     '1.3.8',
+35 silly addNameRange     '1.3.9',
+35 silly addNameRange     '1.3.10',
+35 silly addNameRange     '1.3.11',
+35 silly addNameRange     '1.3.12',
+35 silly addNameRange     '1.4.0',
+35 silly addNameRange     '1.4.1',
+35 silly addNameRange     '1.5.0',
+35 silly addNameRange     '1.5.1',
+35 silly addNameRange     '1.5.2',
+35 silly addNameRange     '1.5.3',
+35 silly addNameRange     '1.6.2',
+35 silly addNameRange     '1.6.3',
+35 silly addNameRange     '1.6.4',
+35 silly addNameRange     '1.6.5',
+35 silly addNameRange     '1.5.4',
+35 silly addNameRange     '1.4.2',
+35 silly addNameRange     '1.6.6',
+35 silly addNameRange     '1.6.7',
+35 silly addNameRange     '1.6.8' ] ]
+36 silly addNamed bower@1.6.8
+37 verbose addNamed "1.6.8" is a plain semver version for bower
+38 silly mapToRegistry name bower
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/bower
+42 verbose addRemoteTarball https://registry.npmjs.org/bower/-/bower-1.6.8.tgz not in flight; adding
+43 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.6.8.tgz',
+43 verbose addRemoteTarball   '4e9400d9f06efc97aed94518f42fceee93ec2a4d' ]
+44 info retry fetch attempt 1 at 2:08:59 PM
+45 info attempt registry request try #1 at 2:08:59 PM
+46 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+47 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+48 info attempt registry request try #2 at 2:09:09 PM
+49 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+50 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+51 info attempt registry request try #3 at 2:10:09 PM
+52 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+53 error fetch failed https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+54 warn retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+55 info retry fetch attempt 2 at 2:10:19 PM
+56 info attempt registry request try #1 at 2:10:19 PM
+57 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+58 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+59 info attempt registry request try #2 at 2:10:29 PM
+60 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+61 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+62 info attempt registry request try #3 at 2:11:29 PM
+63 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+64 error fetch failed https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+65 warn retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+66 info retry fetch attempt 3 at 2:12:29 PM
+67 info attempt registry request try #1 at 2:12:29 PM
+68 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+69 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+70 info attempt registry request try #2 at 2:12:39 PM
+71 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+72 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+73 info attempt registry request try #3 at 2:13:39 PM
+74 http fetch GET https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+75 error fetch failed https://registry.npmjs.org/bower/-/bower-1.6.8.tgz
+76 verbose stack Error: tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+76 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:174:17)
+76 verbose stack     at ClientRequest.g (events.js:260:16)
+76 verbose stack     at emitOne (events.js:77:13)
+76 verbose stack     at ClientRequest.emit (events.js:169:7)
+76 verbose stack     at Socket.socketErrorListener (_http_client.js:259:9)
+76 verbose stack     at emitOne (events.js:77:13)
+76 verbose stack     at Socket.emit (events.js:169:7)
+76 verbose stack     at emitErrorNT (net.js:1253:8)
+76 verbose stack     at doNTCallback2 (node.js:441:9)
+76 verbose stack     at process._tickCallback (node.js:355:17)
+77 verbose cwd /Users/fyu/feifei.github.io/SimpleAngularTest
+78 error Darwin 14.5.0
+79 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "bower"
+80 error node v4.2.3
+81 error npm  v2.14.7
+82 error code ECONNRESET
+83 error network tunneling socket could not be established, cause=connect ECONNREFUSED 10.75.106.10:3128
+83 error network This is most likely not a problem with npm itself
+83 error network and is related to network connectivity.
+83 error network In most cases you are behind a proxy or have bad network settings.
+83 error network
+83 error network If you are behind a proxy, please make sure that the
+83 error network 'proxy' config is set properly.  See: 'npm help config'
+84 verbose exit [ 1, true ]
