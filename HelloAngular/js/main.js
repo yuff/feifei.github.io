@@ -1,4 +1,4 @@
-define(['../bower_components/angular/angular', 'main-controller'], function(angular, mainController) {
+define(['angular', 'main-controller'], function(angular, mainController) {
     'use strict';
    return {
        init: function() {

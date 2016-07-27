@@ -2,8 +2,8 @@ define(function() {
     'use strict';
    var mainController = (function() {
        function MainController($scope) {
-           this.$scope = $scope;
            $scope.mainController = this;
+           this.$scope = $scope;
            this.menus = ['First', 'Second', 'Third'];
        }
        MainController.prototype.clickMenu = function(menu) {
