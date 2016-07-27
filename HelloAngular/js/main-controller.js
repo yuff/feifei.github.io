@@ -11,6 +11,9 @@ define(function() {
            console.log('click ' + menu);
            window.alert(menu);
        }
+       MainController.prototype.getSref = function(menu) {
+           return menu;
+       }
        MainController.$inject = ['$scope'];
        return MainController;
    })();

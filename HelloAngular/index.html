@@ -8,9 +8,14 @@
 </head>
 <body ng-controller="mainController">
 <div class="menu-container">
-    <div ng-repeat="menu in mainController.menus" ng-click="mainController.clickMenu(menu)">
+    <div ng-repeat="menu in mainController.menus" ui-sref="{{mainController.getSref(menu)}}">
         {{menu}}
     </div>
 </div>
+
+<div ui-sref-active="active">
+    <a ui-sref="first">link</a>
+</div>
+<div ui-view></div>
 </body>
 </html>

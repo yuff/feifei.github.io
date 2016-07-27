@@ -12,19 +12,24 @@ requirejs.config({
     //the paths config could be for a directory.
     paths: {
         angular: '../bower_components/angular/angular',
-        jquery: '../bower_components/jquery/dist/jquery'
+        jquery: '../bower_components/jquery/dist/jquery',
+        'ui.router': '../bower_components/angular-ui-router/release/angular-ui-router',
+        'first': './first/first'
     },
     wrapShim: true,
     shim: {
-    angular: {
-        deps: ['jquery'],
-        exports: 'angular'
+        angular: {
+            deps: ['jquery'],
+            exports: 'angular'
+        },
+        'ui.router': {
+            deps: ['angular']
+        }
     }
-}
 });
 
 // Start the main app logic.
-requirejs(['angular', 'main'], function(angular, main) {
+requirejs(['angular', 'main', 'ui.router','first'], function(angular, main) {
     angular.element(document).ready(function() {
         main.init();
         angular.bootstrap(document, ['helloAngular']);
