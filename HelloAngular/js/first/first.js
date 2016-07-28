@@ -1,9 +1,9 @@
 define(['angular'], function(angular) {
 
-    angular.module('first',['ui.router']).config( ['$stateProvider', '$urlRouterProvider'], function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/index');
+    angular.module('hello-angular.first',['ui.router']).config( ['$stateProvider', '$urlRouterProvider'], function($stateProvider, $urlRouterProvider) {
+        $locationProvider.html5Mode(true);
         $stateProvider.state('first', {
-            url: '/first',
+            url: '^/first',
             template: '<div>Hello!! {{greeting}}</div>',
             resolve: { title: 'First' },
             controller: function() {

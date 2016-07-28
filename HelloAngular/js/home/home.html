@@ -1,0 +1,6 @@
+<div class="menu-container">
+    <div ng-repeat="menu in mainController.menus" ui-sref-active="active">
+        <a ui-sref="{{mainController.getSref(menu)}}">{{menu}}</a>
+    </div>
+</div>
+<div ui-view></div>

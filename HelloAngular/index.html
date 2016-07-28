@@ -6,15 +6,13 @@
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
     <script data-main="js/app.js" src="bower_components/requirejs/require.js"></script>
 </head>
-<body ng-controller="mainController">
-<div class="menu-container">
-    <div ng-repeat="menu in mainController.menus" ui-sref="{{mainController.getSref(menu)}}">
-        {{menu}}
-    </div>
-</div>
-
+<body>
+<h1>test</h1>
 <div ui-sref-active="active">
-    <a ui-sref="first">link</a>
+    <a ui-sref="home">Home</a>
+</div>
+<div ui-sref-active="active">
+    <a ui-sref="first">About</a>
 </div>
 <div ui-view></div>
 </body>

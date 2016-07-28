@@ -4,7 +4,7 @@ define(function() {
        function MainController($scope) {
            $scope.mainController = this;
            this.$scope = $scope;
-           this.menus = ['First', 'Second', 'Third'];
+           this.menus = ['Math', 'English', 'Logic'];
        }
        MainController.prototype.clickMenu = function(menu) {
            //TODO: add the real action here
@@ -12,7 +12,7 @@ define(function() {
            window.alert(menu);
        }
        MainController.prototype.getSref = function(menu) {
-           return menu;
+           return 'home.' + menu.toLowerCase();
        }
        MainController.$inject = ['$scope'];
        return MainController;

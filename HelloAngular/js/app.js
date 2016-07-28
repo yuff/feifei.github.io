@@ -29,7 +29,7 @@ requirejs.config({
 });
 
 // Start the main app logic.
-requirejs(['angular', 'main', 'ui.router','first'], function(angular, main) {
+requirejs(['angular', 'ui.router', 'main'], function(angular, router, main) {
     angular.element(document).ready(function() {
         main.init();
         angular.bootstrap(document, ['helloAngular']);
