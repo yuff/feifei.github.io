@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,kBAAO;EACL,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;;AAElB,uBAAY;EACV,UAAU,EAAE,IAAI",
+"sources": ["../scss/style.scss"],
+"names": [],
+"file": "hello-angular.css"
+}

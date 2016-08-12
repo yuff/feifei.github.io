@@ -6,11 +6,6 @@ define(function() {
            this.$scope = $scope;
            this.menus = ['Math', 'English', 'Logic'];
        }
-       MainController.prototype.clickMenu = function(menu) {
-           //TODO: add the real action here
-           console.log('click ' + menu);
-           window.alert(menu);
-       }
        MainController.prototype.getSref = function(menu) {
            return 'home.' + menu.toLowerCase();
        }

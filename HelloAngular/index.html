@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="scss/css/hello-angular.css" />
     <script data-main="js/app.js" src="bower_components/requirejs/require.js"></script>
 </head>
+<!--<body>-->
+<!--<h1>test</h1>-->
+<!--<div ui-sref-active="active">-->
+    <!--<a ui-sref="home">Home</a>-->
+<!--</div>-->
+<!--<div ui-sref-active="active">-->
+    <!--<a ui-sref="first">About</a>-->
+<!--</div>-->
+<!--<div ui-view></div>-->
+<!--</body>-->
 <body>
-<h1>test</h1>
-<div ui-sref-active="active">
-    <a ui-sref="home">Home</a>
-</div>
-<div ui-sref-active="active">
-    <a ui-sref="first">About</a>
-</div>
-<div ui-view></div>
+<section>
+    <div class="panel-menu">
+        <header>
+            Blackboard
+        </header>
+        <ul class="menu-title">
+            <li>Feifei</li>
+            <li>Acitvity Stream</li>
+            <li>Courses</li>
+            <li>Calendar</li>
+            <li>Messages</li>
+            <li>Tools</li>
+        </ul>
+    </div>
+    <div class="panel-content">
+        <div ui-view></div>-->
+    </div>
+</section>
 </body>
 </html>

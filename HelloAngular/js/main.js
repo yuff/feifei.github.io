@@ -1,4 +1,4 @@
-define(['angular', 'main-controller'], function(angular, mainController) {
+define(['angular', 'main-controller', 'base-controller'], function(angular, mainController, baseController) {
     'use strict';
    return {
        init: function() {
@@ -35,6 +35,10 @@ define(['angular', 'main-controller'], function(angular, mainController) {
                    controller: function($scope) {
                        $scope.name = 'maisy/dora/thomas';
                    }
+               }).state('base', {
+                   url: '/base',
+                   templateUrl: './js/base/base.html',
+                   controller: baseController
                });
            }]);
        }
